@@ -6,7 +6,7 @@ khi không đủ căn cứ.
 
 Repository chính thức: <https://github.com/mindu2kk/appota>
 
-Bản chạy online: đang triển khai trên Render.
+Bản chạy online: <https://mindu2kk.github.io/appota/>
 
 ## Giả thuyết được kiểm chứng
 

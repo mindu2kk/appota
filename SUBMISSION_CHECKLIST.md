@@ -16,8 +16,7 @@
 - [x] Có hướng dẫn chạy local bằng một lệnh: `python app.py`.
 - [x] Không cần cài dependency ngoài Python 3.11+.
 - [x] Đã smoke-test API và kiểm tra luồng thật trên trình duyệt.
-- [ ] Deploy online và kiểm tra lại toàn bộ demo trên URL public, hoặc ghi rõ lý
-  do chỉ cung cấp local run trong phần nộp.
+- [x] Deploy online tại <https://mindu2kk.github.io/appota/>.
 
 ## Video tối đa 5 phút
 
