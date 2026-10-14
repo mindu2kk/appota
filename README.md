@@ -6,6 +6,8 @@ khi không đủ căn cứ.
 
 Repository chính thức: <https://github.com/mindu2kk/appota>
 
+Bản chạy online: đang triển khai trên Render.
+
 ## Giả thuyết được kiểm chứng
 
 > Nếu lọc quyền **trước khi truy xuất**, sau đó xếp hạng theo hiệu lực và độ gần

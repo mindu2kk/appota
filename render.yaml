@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: appota-knowledge-guard
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHON_VERSION
+        value: 3.13.0

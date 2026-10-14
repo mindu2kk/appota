@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -56,6 +57,6 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    address = ("127.0.0.1", 8000)
+    address = (os.getenv("HOST", "127.0.0.1"), int(os.getenv("PORT", "8000")))
     print(f"Appota Knowledge MVP đang chạy tại http://{address[0]}:{address[1]}")
     ThreadingHTTPServer(address, Handler).serve_forever()
