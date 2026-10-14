@@ -1,0 +1,23 @@
+[
+  {
+    "id": "user-an",
+    "name": "Nguyễn Minh An",
+    "company": "AppotaPay",
+    "department": "Engineering",
+    "role": "employee"
+  },
+  {
+    "id": "user-binh",
+    "name": "Trần Đức Bình",
+    "company": "Appota Ads",
+    "department": "Sales",
+    "role": "manager"
+  },
+  {
+    "id": "user-chi",
+    "name": "Lê Mai Chi",
+    "company": "Appota Group",
+    "department": "HR",
+    "role": "hr_admin"
+  }
+]

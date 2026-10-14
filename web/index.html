@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appota Knowledge Guard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%234f46e5%22/><text x=%2232%22 y=%2241%22 text-anchor=%22middle%22 font-size=%2226%22 fill=%22white%22>AK</text></svg>">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">AK</div>
+      <div>
+        <p class="eyebrow">MISSION 2 · PROTOTYPE</p>
+        <h1>Knowledge Guard</h1>
+        <p>Đúng tri thức · Đúng bối cảnh · Đúng quyền</p>
+      </div>
+    </header>
+
+    <section class="context-card">
+      <label for="user">Đang hỏi với tư cách</label>
+      <select id="user"></select>
+      <div id="identity" class="identity"></div>
+    </section>
+
+    <section class="chat-card">
+      <div id="messages" class="messages">
+        <div class="message system">Chọn một persona và đặt câu hỏi. Hệ thống chỉ dùng tài liệu người đó được phép truy cập.</div>
+      </div>
+      <form id="ask-form">
+        <label class="sr-only" for="question">Câu hỏi</label>
+        <textarea id="question" rows="2" placeholder="Ví dụ: Quy định nghỉ phép của tôi như thế nào?" required></textarea>
+        <button type="submit">Tra cứu</button>
+      </form>
+      <div class="examples">
+        <span>Thử nhanh:</span>
+        <button data-question="Quy định nghỉ phép của tôi như thế nào?">Nghỉ phép</button>
+        <button data-question="Tôi được làm từ xa mấy ngày?">Làm từ xa</button>
+        <button data-question="Mức công tác phí là bao nhiêu?">Dữ liệu mâu thuẫn</button>
+        <button data-question="Quy định mua laptop cá nhân thế nào?">Thiếu dữ liệu</button>
+      </div>
+    </section>
+
+    <aside>
+      <h2>Guardrail đang bật</h2>
+      <ol>
+        <li>Lọc quyền trước truy xuất</li>
+        <li>Kiểm tra hiệu lực phiên bản</li>
+        <li>Ưu tiên phạm vi gần người hỏi</li>
+        <li>Từ chối khi thiếu hoặc mâu thuẫn</li>
+        <li>Mọi câu trả lời đều có nguồn</li>
+      </ol>
+    </aside>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
